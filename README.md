@@ -44,7 +44,7 @@ htmlMatter(`
 <!-- @config
 port: 3000
 -->
-`, {namespace: 'config'})
+`, { namespace: 'config' })
 //=> yields:
 { port: 3000 }
 ```
@@ -53,9 +53,9 @@ Use a custom parser instead of [Yaml](https://github.com/nodeca/js-yaml):
 
 ```js
 htmlMatter(`
-@config {
+<!-- @config {
   "port": 3000
-}
+} -->
 `, { namespace: 'config', parse: JSON.parse })
 //=> yields:
 { port: 3000 }
