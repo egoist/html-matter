@@ -16,7 +16,7 @@
     "test": "jest && npm run lint && npm run build",
     "lint": "xo",
     "build:node": "bili src/node.js --name index",
-    "build:browser": "bili src/browser.js --name browser --format umd",
+    "build:browser": "bili src/browser.js --name browser --format umd --module-name htmlMatter",
     "build": "npm run build:node && npm run build:browser"
   },
   "author": "egoist <0x142857@gmail.com>",
